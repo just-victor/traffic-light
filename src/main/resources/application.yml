@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:h2:file:~/traffic_db
+      driver-class-name: org.h2.Driver
+      password: test
+      username: test
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
+app:
+    traffic-color-delay: ${TRAFFIC_COLOR_DELAY:20000} #in millis
+    number-traffic-generation-threads: ${NUMBER_TRAFFIC_GENERATION_THREADS:5}
+    is-async: ${IS_ASYNC:true}
+
