@@ -24,7 +24,7 @@ date format: `yyyy-mm-ddThh:mm:ss.fffffffffZ`
 localhost:8080/traffic?from=2021-02-09T07:47:25.573600Z&to=2021-02-09T07:47:25.573600Z
 ```
 
-* Common configuration (environment variables)
+**Common configuration (environment variables)**
 ```
 TRAFFIC_COLOR_DELAY:20000
 ```
